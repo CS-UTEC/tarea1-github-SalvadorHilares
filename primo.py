@@ -6,9 +6,11 @@ def es_primo(numero):
             return False
     return True
 
-numero = int(input("inserta un numero :  "))
+def primo(numero):
+    if es_primo(numero):
+        print("El numero %s es primo" % numero)
+    else:
+        print("El numero %s NO es primo" % numero)
 
-if es_primo(numero):
-    print("El numero %s es primo" % numero)
-else:
-    print("El numero %s NO es primo" % numero)
+numero = int(input("inserta un numero :  "))
+primo(numero)
